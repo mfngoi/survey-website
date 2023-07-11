@@ -1,0 +1,29 @@
+{
+    "title": "Survey Form",
+    "questions": [
+        {
+            "question": "Do you like apple?",
+            "options": [
+                "Yes",
+                "No",
+                "Not sure"
+            ]
+        },
+        {
+            "question": "",
+            "options": []
+        },
+        {
+            "question": "",
+            "options": []
+        },
+        {
+            "question": "",
+            "options": []
+        },
+        {
+            "question": "",
+            "options": []
+        }
+    ]
+}

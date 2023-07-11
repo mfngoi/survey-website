@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master {{input['title']}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../static/css/sstyles.css"> 
+
+</head>
+<body>
+
+    <h1 id="title">{{input['title']}}</h1>
+    <h2>Master Edition</h2>
+    <form>
+    {% for x in input['questions'] %}
+        
+        <fieldset>
+            <legend>{{ x['question'] }}</legend>
+            
+            {% for y in x['options'] %}
+            <label><input type="radio" name="{{x['question']}}" value='{{y}}'>{{y}}</label><br>
+            {% endfor %}
+        </fieldset>
+
+        
+
+    {% endfor %}
+        
+    </form>
+
+	<input type="button" value="Show Result" id="result_btn">
+    <input type="button" value="User Survey" id="user_survey_btn">
+
+    <script src="../static/js/master_survey.js"></script>
+    
+</body>
+</html>
+

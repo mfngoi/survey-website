@@ -1,0 +1,52 @@
+{
+    "title": "Baseball Survey",
+    "questions": [
+        {
+            "question": "Which team is your favorite in Major League Baseball?",
+            "options": [
+                "New York Yankees",
+                "Los Angeles Dodgers",
+                "Boston Red Sox",
+                "Chicago Cubs",
+                "Other"
+            ]
+        },
+        {
+            "question": "Who is your favorite baseball player of all time?",
+            "options": [
+                "Babe Ruth",
+                "Hank Aaron",
+                "Willie Mays",
+                "Mickey Mantle",
+                "Other"
+            ]
+        },
+        {
+            "question": "Do you enjoy watching baseball games at the stadium or on TV?",
+            "options": [
+                "At the stadium",
+                "On TV",
+                "Both",
+                "Neither"
+            ]
+        },
+        {
+            "question": "How often do you play baseball yourself?",
+            "options": [
+                "Regularly",
+                "Occasionally",
+                "Rarely",
+                "Never"
+            ]
+        },
+        {
+            "question": "What is your favorite baseball memory?",
+            "options": [
+                "Attending a World Series game",
+                "Meeting a favorite player",
+                "Playing in a championship game",
+                "Other"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "title": "Sports Survey",
+    "questions": [
+        {
+            "question": "Which sport do you enjoy the most?",
+            "options": [
+                "Football",
+                "Basketball",
+                "Soccer",
+                "Tennis",
+                "Other"
+            ]
+        },
+        {
+            "question": "How often do you participate in sports activities?",
+            "options": [
+                "Every day",
+                "Few times a week",
+                "Once a week",
+                "Few times a month",
+                "Rarely"
+            ]
+        },
+        {
+            "question": "What motivates you to play sports?",
+            "options": [
+                "Fitness and health benefits",
+                "Competition and winning",
+                "Teamwork and camaraderie",
+                "Stress relief",
+                "Fun and enjoyment"
+            ]
+        },
+        {
+            "question": "Do you prefer watching sports events or playing them?",
+            "options": [
+                "Watching",
+                "Playing"
+            ]
+        },
+        {
+            "question": "How do sports contribute to your overall well-being?",
+            "options": [
+                "Physical fitness",
+                "Mental well-being",
+                "Social connections",
+                "Discipline and self-motivation",
+                "All of the above"
+            ]
+        }
+    ]
+}

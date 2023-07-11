@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(45deg, #6DD5FA, #7D5CFE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card h1 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.question-input {
+    width: 95%;
+    padding: 10px;
+    border: 2px solid #6DD5FA;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 6px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 4px;
+    background: linear-gradient(45deg, #6DD5FA, #7D5CFE);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.answer {
+    max-height: 200px;
+    margin-top: 20px;
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.suggestions {
+    max-height: 150px;
+    margin-top: 20px;
+    padding: 20px;
+    background: lightblue;
+    border-radius: 4px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}

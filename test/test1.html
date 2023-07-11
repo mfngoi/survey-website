@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Survey Results</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <canvas id="chart"></canvas>
+
+    <script>
+        const data = {'Sports Survey': [{'questions': 'Which sport do you enjoy the most?', 'options': {'Football': 0, 'Basketball': 2, 'Soccer': 1, 'Tennis': 1, 'Other': 0}}, {'questions': 'How often do you participate in sports activities?', 'options': {'Every day': 0, 'Few times a week': 1, 'Once a week': 0, 'Few times a month': 3, 'Rarely': 0}}, {'questions': 'What motivates you to play sports?', 'options': {'Fitness and health benefits': 0, 'Competition and winning': 0, 'Teamwork and camaraderie': 3, 'Stress relief': 1, 'Fun and enjoyment': 0}}, {'questions': 'Do you prefer watching sports events or playing them?', 'options': {'Watching': 3, 'Playing': 1}}, {'questions': 'How do sports contribute to your overall well-being?', 'options': {'Physical fitness': 1, 'Mental well-being': 2, 'Social connections': 1, 'Discipline and self-motivation': 0, 'All of the above': 0}}]};
+
+        const chartData = [];
+        const chartLabels = [];
+
+        data['Sports Survey'].forEach((item) => {
+            const options = item.options;
+            const question = item.questions;
+
+            const optionValues = Object.values(options);
+            const optionLabels = Object.keys(options);
+
+            chartData.push(optionValues);
+            chartLabels.push(optionLabels);
+        });
+
+        const canvas = document.getElementById('chart');
+        const ctx = canvas.getContext('2d');
+
+        const chart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: chartLabels,
+                datasets: [{
+                    data: chartData,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'bottom',
+                },
+                title: {
+                    display: true,
+                    text: 'Sports Survey Results'
+                }
+            }
+        });
+    </script>
+</body>
+</html>

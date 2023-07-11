@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../static/css/tsyles.css">
+
+</head>
+<body>
+    <div class="card-body">
+        <h1 id="title">{{name_input}}</h1>
+
+        {% for x in input[name_input] %}
+            <h2>{{x['questions']}}</h2>
+            {% for choices in x['options'] %}
+                <p>{{choices}} : {{x['options'][choices]}}</p>
+            {% endfor %}
+        {% endfor %}
+
+        <input type="button" value="Show Analysis" id="analysis_btn">
+    </div>
+
+    <script src="../static/js/result.js"></script>
+</body>
+</html>

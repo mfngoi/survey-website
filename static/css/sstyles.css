@@ -1,0 +1,22 @@
+body {
+    background: linear-gradient(45deg, #6DD5FA, #7D5CFE);
+    height: 100vh;
+    margin: 10;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+legend {
+    background: lightblue;
+}
+
+fieldset {
+    background: white;
+}
+
+.submit {
+    background: lightcyan;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sports Survey Results</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .option {
+            width: 45%;
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .option:hover {
+            background-color: #e0e0e0;
+        }
+
+        .option.selected {
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+        .option.selected:hover {
+            background-color: #45a049;
+        }
+
+        .option .count {
+            font-weight: bold;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sports Survey Results</h1>
+        <div class="survey">
+            <div class="question">
+                <h2>Which sport do you enjoy the most?</h2>
+                <div class="options">
+                    <div class="option">
+                        Football<span class="count">0</span>
+                    </div>
+                    <div class="option selected">
+                        Basketball<span class="count">2</span>
+                    </div>
+                    <div class="option">
+                        Soccer<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Tennis<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Other<span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>How often do you participate in sports activities?</h2>
+                <div class="options">
+                    <div class="option">
+                        Every day<span class="count">0</span>
+                    </div>
+                    <div class="option selected">
+                        Few times a week<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Once a week<span class="count">0</span>
+                    </div>
+                    <div class="option">
+                        Few times a month<span class="count">3</span>
+                    </div>
+                    <div class="option">
+                        Rarely<span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>What motivates you to play sports?</h2>
+                <div class="options">
+                    <div class="option">
+                        Fitness and health benefits<span class="count">0</span>
+                    </div>
+                    <div class="option">
+                        Competition and winning<span class="count">0</span>
+                    </div>
+                    <div class="option selected">
+                        Teamwork and camaraderie<span class="count">3</span>
+                    </div>
+                    <div class="option">
+                        Stress relief<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Fun and enjoyment<span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>Do you prefer watching sports events or playing them?</h2>
+                <div class="options">
+                    <div class="option selected">
+                        Watching<span class="count">3</span>
+                    </div>
+                    <div class="option">
+                        Playing<span class="count">1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="question">
+                <h2>How do sports contribute to your overall well-being?</h2>
+                <div class="options">
+                    <div class="option">
+                        Physical fitness<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Mental well-being<span class="count">2</span>
+                    </div>
+                    <div class="option">
+                        Social connections<span class="count">1</span>
+                    </div>
+                    <div class="option">
+                        Discipline and self-motivation<span class="count">0</span>
+                    </div>
+                    <div class="option">
+                        All of the above<span class="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

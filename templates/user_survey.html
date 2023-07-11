@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{input['title']}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="../static/css/sstyles.css"> 
+
+</head>
+<body>
+
+    <h1>{{input['title']}}</h1>
+    <form>
+    {% for x in input['questions'] %}
+        
+        <fieldset>
+            <legend>{{ x['question'] }}</legend>
+            
+            {% for y in x['options'] %}
+            <label><input type="radio" name="{{x['question']}}" value='{{y}}'>{{y}}</label><br>
+            {% endfor %}
+        </fieldset>
+
+        
+
+    {% endfor %}
+        
+        <input type="submit" value="Submit" class="submit" id="submit_btn">
+    </form>
+
+	<input type="button" value="Sampling Suggestion" id="suggestion_btn">
+
+    <script src="../static/js/jinja.js"></script>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const selectedOptions = {
+                "title": "{{input['title']}}",
+                "options": [
+                    {% for i in input['questions'] %}
+                        form.elements['{{i['question']}}'].value,
+                    {% endfor %}
+                ]
+            };
+            console.log(selectedOptions);
+        
+            endpoint = 'http://127.0.0.1:5000/database'
+            
+            request = {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(selectedOptions)
+            };
+        
+            fetch(endpoint, request);
+        };
+
+        const form = document.querySelector('form');
+        form.addEventListener('submit', submitForm);
+    </script>
+</body>
+</html>
