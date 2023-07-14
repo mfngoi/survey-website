@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = '{personal API Key}'
 
 def generateJSON(topic, questionnum):
     
