@@ -39,8 +39,6 @@ def sendQuestion():
     question = json_body['question']
     questionNum = json_body['questionNum']
 
-    openai.api_key = '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'
-
     result_json = generateJSON(question, questionNum) 
     print(result_json)
 
